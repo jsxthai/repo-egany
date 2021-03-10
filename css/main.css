@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f1f1f1;
+}
+
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #fff;
+  padding: 0 24px;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header nav ul {
+  margin-left: 2rem;
+  display: none;
+}
+
+.header nav ul li + li {
+  margin-left: 1rem;
+}
+
+.header nav ul li {
+  display: inline-block;
+}
+
+.header__right {
+  width: 40px;
+  height: 40px;
+  background-color: #ffc800;
+  border-radius: 50%;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    background-color: #f1f1f1;
+  }
+  .header nav ul {
+    display: block;
+  }
+}
+/*# sourceMappingURL=main.css.map */

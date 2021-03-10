@@ -27,6 +27,7 @@ body {
   margin-left: auto;
   background-color: $backgroundColor;
   padding: 0 24px;
+  position: relative;
 }
 
 .header {
@@ -274,6 +275,55 @@ footer {
   }
 }
 
+.review {
+  margin-top: 100px;
+  position: absolute;
+  left: -20px;
+
+  &__img {
+    img {
+      max-width: 60%;
+      height: auto;
+      display: block;
+    }
+  }
+
+  &__comment {
+    margin-left: calc(20px + 24px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &-img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    &-control {
+      span + span {
+        margin-left: 2rem;
+      }
+      span {
+        width: 40px;
+        height: 40px;
+        background-color: $yellowColor;
+        display: inline-block;
+        border-radius: 50%;
+        padding: 9px;
+        text-align: center;
+
+        img {
+          display: block;
+          width: 22px;
+          height: 22px;
+        }
+      }
+    }
+  }
+}
+
 //----------------------------------------------------
 @media (min-width: 768px) {
   .container {
@@ -335,5 +385,13 @@ footer {
 
   .new {
     flex-direction: row-reverse;
+  }
+
+  .review {
+    &__img {
+      img {
+        max-width: 60%;
+      }
+    }
   }
 }

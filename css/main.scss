@@ -149,6 +149,131 @@ footer {
   }
 }
 
+.new {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__info {
+    h1 {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 48px;
+      line-height: 72px;
+    }
+    p {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  &__img {
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  &__card {
+    margin-top: 60px;
+    max-width: 654px;
+    height: auto;
+    background-color: $whiteColor;
+    box-shadow: 0px 6px 36px rgba(0, 0, 0, 0.1);
+    padding: 4rem;
+    border-radius: 16px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -36px;
+      left: 8px;
+      width: 26.56px;
+      height: 126.75px;
+      background: #fcd4d4;
+      opacity: 0.7;
+      transform: rotate(43.17deg);
+    }
+  }
+}
+
+.btn {
+  min-width: 140px;
+  width: 170px;
+  height: 40px;
+  border-radius: 12px;
+  padding: 8px 24px;
+  background-color: $yellowColor;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.6rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.tote {
+  display: flex;
+  flex-direction: column;
+
+  &__intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__list {
+    display: flex;
+    overflow-x: hidden;
+  }
+
+  &__card {
+    width: 285px;
+    height: 397px;
+    border-radius: 16px;
+    box-shadow: 0px 6px 36px rgba(0, 0, 0, 0.1);
+    padding: 2.4rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+    font-size: 1.6rem;
+    background-color: $whiteColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    span {
+      display: inline-block;
+      border-radius: 50%;
+      width: 16px;
+      height: 16px;
+      box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15);
+      background-color: $whiteColor;
+    }
+
+    .pink {
+      background: #ef9cd6;
+    }
+
+    .blue {
+      background: #85cef2;
+    }
+
+    .yellow {
+      background: #f4ea88;
+    }
+  }
+
+  &__card + &__card {
+    margin-left: 2rem;
+  }
+}
+
 //----------------------------------------------------
 @media (min-width: 768px) {
   .container {
@@ -206,5 +331,9 @@ footer {
       font-size: 16px;
       line-height: 24px;
     }
+  }
+
+  .new {
+    flex-direction: row-reverse;
   }
 }

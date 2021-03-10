@@ -21,7 +21,6 @@ body {
   margin-left: auto;
   background-color: #f1f1f1;
   padding: 0 24px;
-  position: relative;
 }
 
 .header {
@@ -341,6 +340,11 @@ footer {
   margin-left: 2rem;
 }
 
+.neo {
+  position: relative;
+  height: 1200px;
+}
+
 .review {
   margin-top: 100px;
   position: absolute;
@@ -420,6 +424,18 @@ footer {
   height: 22px;
 }
 
+.instagram {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.instagram__slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 @media (min-width: 768px) {
   .container {
     max-width: 768px;
@@ -476,10 +492,11 @@ footer {
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
   }
+  .neo {
+    height: 700px;
+  }
   .review {
     margin-top: 100px;
-    position: absolute;
-    left: -20px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

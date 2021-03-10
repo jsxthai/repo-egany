@@ -27,7 +27,6 @@ body {
   margin-left: auto;
   background-color: $backgroundColor;
   padding: 0 24px;
-  position: relative;
 }
 
 .header {
@@ -275,6 +274,11 @@ footer {
   }
 }
 
+.neo {
+  position: relative;
+  height: 1200px;
+}
+
 .review {
   margin-top: 100px;
   position: absolute;
@@ -336,6 +340,14 @@ footer {
         }
       }
     }
+  }
+}
+
+.instagram {
+  display: flex;
+
+  &__slider {
+    display: flex;
   }
 }
 
@@ -402,10 +414,12 @@ footer {
     flex-direction: row-reverse;
   }
 
+  .neo {
+    height: 700px;
+  }
+
   .review {
     margin-top: 100px;
-    position: absolute;
-    left: -20px;
     display: flex;
     flex-direction: row;
 

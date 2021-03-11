@@ -12,6 +12,9 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
+}
+
+.background {
   background-color: #f1f1f1;
 }
 
@@ -19,7 +22,6 @@ body {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  background-color: #f1f1f1;
   padding: 0 24px;
 }
 
@@ -34,7 +36,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #fff;
 }
 
 .header nav {
@@ -151,14 +152,14 @@ body {
 .slider__control span {
   width: 12px;
   height: 12px;
-  background-color: #ffc800;
+  background-color: #fff;
   margin: 0.6rem;
   border-radius: 50%;
   cursor: pointer;
   display: inline-block;
 }
 
-.slider__control span .active {
+.slider__control .active {
   background-color: #ffc800;
 }
 
@@ -341,6 +342,9 @@ body {
   display: -ms-flexbox;
   display: flex;
   overflow-x: hidden;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .tote__card {
@@ -361,6 +365,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-right: 2rem;
 }
 
 .tote__card-group {
@@ -423,10 +428,6 @@ body {
 
 .tote__card .yellow {
   background: #f4ea88;
-}
-
-.tote__card + .tote__card {
-  margin-left: 2rem;
 }
 
 .review {
@@ -532,6 +533,43 @@ body {
   text-align: center;
 }
 
+.instagram__intro h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.instagram__intro p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.instagram__intro div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.instagram__intro div a {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  color: #009efe;
+  margin-left: 0.6rem;
+}
+
 .instagram__slider {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -576,6 +614,12 @@ body {
 }
 
 .footer {
+  height: 192px;
+  width: 100%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -583,42 +627,42 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  max-height: 192px;
-  width: 100%;
-  background-color: #fff;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5rem;
+}
+
+.footer ul li {
+  list-style-type: none;
+}
+
+.footer nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.footer li {
-  list-style-type: none;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 50%;
-          flex: 1 0 50%;
+  line-height: 4rem;
 }
 
 .footer__contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -626,7 +670,6 @@ body {
     max-width: 768px;
   }
   .header {
-    background-color: #f1f1f1;
     height: 90px;
   }
   .header nav ul {
@@ -635,58 +678,21 @@ body {
   .header__right .menu {
     display: none;
   }
-  .tote__intro {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  .tote__intro h1 {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 48px;
-    line-height: 72px;
-  }
-  .tote__list {
+  .new__info {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    overflow-x: hidden;
-  }
-  .tote__card {
-    width: 285px;
-    height: 397px;
-    border-radius: 16px;
-    padding: 2.4rem;
-    height: auto;
-    -webkit-box-shadow: 0px 6px 36px rgba(0, 0, 0, 0.1);
-            box-shadow: 0px 6px 36px rgba(0, 0, 0, 0.1);
-    font-weight: 700;
-    line-height: 2.4rem;
-    font-size: 1.6rem;
-    background-color: #fff;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-  .tote__card-group {
-    width: 100%;
-    height: auto;
-    padding: 1rem 0 0 0;
-  }
-  .tote__card img {
-    width: 237px;
-    height: 237px;
-    border-radius: 8px;
-  }
-  .tote__card span + span {
-    margin-left: 0.6rem;
-  }
-  .tote__card + .tote__card {
-    margin-left: 2rem;
+    text-align: center;
   }
   .review__comment {
     display: -webkit-box;
@@ -698,6 +704,27 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .footer nav {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .footer nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .footer nav ul li {
+    margin-right: 2rem;
+  }
+  .footer__contact {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .footer__contact img + img {
+    margin-left: 1rem;
   }
 }
 
@@ -754,6 +781,41 @@ body {
     font-size: 16px;
     line-height: 24px;
   }
+  .tote__intro {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .tote__intro h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 72px;
+  }
+  .tote__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .tote__card {
+    width: 285px;
+    height: 397px;
+    border-radius: 16px;
+    padding: 2.4rem;
+    line-height: 2.4rem;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+  }
+  .tote__card-group {
+    padding: 1rem 0 0 0;
+  }
+  .tote__card img {
+    width: 237px;
+    height: 237px;
+    border-radius: 8px;
+  }
   .review {
     margin-top: 100px;
     display: -webkit-box;
@@ -796,6 +858,35 @@ body {
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
   }
+  .instagram__intro h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 72px;
+  }
+  .instagram__card {
+    min-width: 285px;
+    height: 285px;
+    border-radius: 16px;
+    padding: 8px;
+    -webkit-filter: drop-shadow(0px 6px 36px rgba(0, 0, 0, 0.1));
+            filter: drop-shadow(0px 6px 36px rgba(0, 0, 0, 0.1));
+  }
+  .instagram__card img {
+    width: 269px;
+    height: 269px;
+  }
+  .footer {
+    padding: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-height: 90px;
+  }
 }
 
 @media (min-width: 1300px) {
@@ -816,6 +907,9 @@ body {
   }
   .review__comment p {
     width: 80%;
+  }
+  .footer {
+    padding: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,5 +1,5 @@
-// @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
 $blackColor: #000;
 $yellowColor: #ffc800;
 $whiteColor: #fff;
@@ -182,9 +182,19 @@ body {
     background-image: url(../images/background/city.png);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: left 0 bottom 0;
     display: flex;
     justify-content: center;
+    // position: relative;
+
+    // img {
+    // width: 60%;
+    // }
+
+    // img {
+    //    position: absolute;
+    //   top: -10px;
+    // }
   }
 
   h1 {
@@ -584,25 +594,18 @@ $marginLeftReview: 4rem;
   }
 
   &__card {
-    // width: 285px;
-    // height: 285px;
     min-width: 156px;
     height: 156px;
     background-color: $whiteColor;
-    // border-radius: 16px;
     border-radius: 8.71251px;
 
     display: flex;
     justify-content: center;
     align-items: center;
-    // padding: 8px;
-    // filter: drop-shadow(0px 6px 36px rgba(0, 0, 0, 0.1));
-    // filter: drop-shadow(0px 3.26719px 19.6032px rgba(0, 0, 0, 0.1));
+
     box-shadow: 0px 6px 36px rgba(0, 0, 0, 0.1);
 
     img {
-      // width: 269px;
-      // height: 269px;
       width: 147.24px;
       height: 147.24px;
       border-radius: 8.71251px;
@@ -646,6 +649,7 @@ $marginLeftReview: 4rem;
 //----------------------------------------------------
 //----------------------------------------------------
 //----------------------------------------------------
+
 @media (min-width: 768px) {
   .footer {
     max-width: 768px;
@@ -928,8 +932,5 @@ $marginLeftReview: 4rem;
         width: 80%;
       }
     }
-  }
-
-  .footer {
   }
 }
